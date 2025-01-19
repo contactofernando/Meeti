@@ -6,9 +6,7 @@
     padding: 5rem 0;
 
     &__heading {
-        text-align: center;
-        margin: 0;
-        color: v.$gris;
+        @include m.heading;
     }
 }
 
@@ -25,9 +23,8 @@
         padding: 1rem;
         border: 1px solid lighten(v.$gris, 50%);
         margin-bottom: 2rem;
-
         @include m.tablet { 
-            margin-bottom: 0
+            margin-bottom: 0;
         }
     }
     &__submit {
